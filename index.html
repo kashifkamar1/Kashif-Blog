@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <input type="text" id="searchInput" placeholder="Search blog..." style="padding: 8px; width: 200px;">
+<button onclick="searchPosts()" style="padding: 8px;">Search</button>
+<button onclick="clearSearch()" style="padding: 8px;">Clear</button>
+
+<script>
+function clearSearch() {
+  document.getElementById("searchInput").value = "";
+  document.querySelectorAll(".blog-post").forEach(post => post.style.display = "block");
+}
+</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Blog Post</title>
@@ -197,7 +207,7 @@
 </html>
 
 <section id="about" style="max-width: 800px; margin: 50px auto; padding: 20px; text-align: center;">
-  <img src="your-photo.jpg" alt="Your Name" style="width: 150px; height: 150px; border-radius: 50%; border: 3px solid skyblue; margin-bottom: 20px;">
+  <img src="your-photo.jpg" alt="Kashif Kamar" style="width: 150px; height: 150px; border-radius: 50%; border: 3px solid skyblue; margin-bottom: 20px;">
   <h2>About Me</h2>
   <p style="font-size: 1.1rem; color: #333;">
     Hi! I'm <strong>Kashif</strong>, a passionate blogger who loves to share knowledge, ideas, and tutorials on web development, tech, and creativity.
