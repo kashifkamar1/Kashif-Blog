@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <input type="text" id="searchInput" placeholder="Search blog..." style="padding: 8px; width: 200px;">
-<button onclick="searchPosts()" style="padding: 8px;">Search</button>
-<button onclick="clearSearch()" style="padding: 8px;">Clear</button>
-
-<script>
-function clearSearch() {
-  document.getElementById("searchInput").value = "";
-  document.querySelectorAll(".blog-post").forEach(post => post.style.display = "block");
-}
 </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -19,8 +10,7 @@ function clearSearch() {
 </head>
 <body>
   <header>
-    <input type="text" id="searchInput" placeholder="Search blog posts..." onkeyup="searchPosts()" style="padding: 10px; width: 100%; max-width: 400px; margin: 20px auto; display: block;">
-    <img src="kashif_blogs_logo.png" alt="Kashif Blogs Logo" weidth="300" height="60">
+        <img src="kashif_blogs_logo.png" alt="Kashif Blogs Logo" weidth="300" height="60">
     <h1>Kashif Blog's</h1>
     <nav>
       <ul>
@@ -223,6 +213,6 @@ function clearSearch() {
   </p>
 </section>
 <div style="display: flex; justify-content: space-between; margin-top: 20px;">
-  <a href="UK India Trade Agreement.html"><button>← Previous</button></a>
+  <a href="The Impact of AI in Education.html"><button>← Previous</button></a>
   <a href="post.html"><button>Next →</button></a>
 </div>
